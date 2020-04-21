@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #803ca3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+    <children>
+        <Label layoutX="239.0" layoutY="85.0" text="Hello," textFill="#eee7e7f5">
+            <font>
+                <Font name="Georgia Italic" size="21.0" />
+            </font>
+        </Label>
+        <Pane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: #551975;">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="117.0" layoutX="292.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Button fx:id="menuLogout" layoutX="560.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Logout" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="settingsButton" layoutX="419.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Settings" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="24.0" />
+         </font>
+      </Button>
+          <Pane layoutX="36.0" layoutY="178.0" prefHeight="347.0" prefWidth="305.0" style="-fx-background-color: #82177e;">
+         <children>
+            <Label layoutX="94.0" layoutY="29.0" text="Singers" textFill="#eee7e7">
+               <font>
+                  <Font name="Sylfaen" size="39.0" />
+               </font>
+            </Label>
+              <Button fx:id="singerShow" layoutX="70.0" layoutY="280.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: #551975;" text="Show" textFill="#eee7e7">
+                  <font>
+                      <Font name="Sylfaen" size="24.0" />
+                  </font>
+              </Button>
+            <ImageView fitHeight="159.0" fitWidth="159.0" layoutX="73.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/singer.png" />
+               </image>
+               <effect>
+                  <Blend mode="MULTIPLY" opacity="0.42" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="366.0" layoutY="178.0" prefHeight="347.0" prefWidth="305.0" style="-fx-background-color: #82177e;">
+         <children>
+            <Label layoutX="106.0" layoutY="30.0" text="Songs" textFill="#eee7e7">
+               <font>
+                  <Font name="Sylfaen" size="39.0" />
+               </font>
+            </Label>
+            <Button fx:id="songShow" layoutX="70.0" layoutY="278.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: #551975;" text="Show" textFill="#eee7e7">
+               <font>
+                  <Font name="Sylfaen" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="69.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/song.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="usernameField" layoutX="304.0" layoutY="85.0" textFill="#eee7e7f5">
+         <font>
+            <Font name="Georgia Italic" size="21.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

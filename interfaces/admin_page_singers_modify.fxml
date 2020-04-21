@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #803ca3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminSingersModifyController">
+    <children>
+        <Label layoutX="408.0" layoutY="85.0" text="Hello, Admin" textFill="#eee7e7f5">
+            <font>
+                <Font name="Georgia Italic" size="21.0" />
+            </font>
+        </Label>
+        <Pane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: #551975;">
+            <children>
+                <ImageView fitHeight="48.0" fitWidth="117.0" layoutX="292.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.jpg" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+        <Button fx:id="singersLogout" layoutX="560.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Logout" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="backButton" layoutX="28.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="&lt;- Back" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+        <Pane layoutX="25.0" layoutY="126.0" prefHeight="125.0" prefWidth="658.0" style="-fx-background-color: #82177e;">
+         <children>
+            <Label layoutX="26.0" layoutY="14.0" text="Id" textFill="#eee7e7f5">
+               <font>
+                  <Font name="Georgia Italic" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="changeIdField" layoutX="69.0" layoutY="7.0" prefHeight="39.0" prefWidth="54.0">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="143.0" layoutY="14.0" text="Name" textFill="#eee7e7f5">
+               <font>
+                  <Font name="Georgia Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="76.0" text="Country" textFill="#eee7e7f5">
+               <font>
+                  <Font name="Georgia Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="268.0" layoutY="74.0" text="Style" textFill="#eee7e7f5">
+               <font>
+                  <Font name="Georgia Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="392.0" layoutY="14.0" text="Age" textFill="#eee7e7f5">
+               <font>
+                  <Font name="Georgia Italic" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="changeNameField" layoutX="221.0" layoutY="7.0" prefHeight="39.0" prefWidth="159.0">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="changeAgeField" layoutX="443.0" layoutY="7.0" prefHeight="39.0" prefWidth="54.0">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="styleComboBox" layoutX="329.0" layoutY="69.0" prefHeight="39.0" prefWidth="126.0" />
+            <ComboBox fx:id="countryComboBox" layoutX="119.0" layoutY="69.0" prefHeight="39.0" prefWidth="126.0" />
+            <Button fx:id="singersUpdateButton" layoutX="524.0" layoutY="4.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Update" textFill="#eee7e7">
+               <font>
+                  <Font name="Sylfaen" size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="changeImageField" layoutX="491.0" layoutY="69.0" prefHeight="39.0" prefWidth="159.0">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </TextField>
+         </children>
+        </Pane>
+        <TableView fx:id="tableOfSingers" layoutX="28.0" layoutY="267.0" prefHeight="333.0" prefWidth="518.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="46.0" text="id" />
+                <TableColumn fx:id="col_name" prefWidth="122.0" text="name" />
+                <TableColumn fx:id="col_age" prefWidth="61.0" text="age" />
+                <TableColumn fx:id="col_gender" prefWidth="83.0" text="gender" />
+                <TableColumn fx:id="col_style" prefWidth="86.0" text="style_id" />
+                <TableColumn fx:id="col_country" prefWidth="138.0" text="country_id" />
+            <TableColumn fx:id="col_image" prefWidth="86.0" text="image_path" />
+            </columns>
+        </TableView>
+      <Pane layoutX="560.0" layoutY="423.0" prefHeight="163.0" prefWidth="126.0" style="-fx-background-color: #82177e;">
+         <children>
+            <Label layoutX="53.0" layoutY="14.0" text="Id" textFill="#eee7e7f5">
+               <font>
+                  <Font name="Georgia Italic" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="deleteIdField" layoutX="24.0" layoutY="43.0" prefHeight="39.0" prefWidth="78.0">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </TextField>
+            <Button fx:id="singersDeleteButton" layoutX="8.0" layoutY="100.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="110.0" style="-fx-background-color: #551975;" text="Delete" textFill="#eee7e7">
+               <font>
+                  <Font name="Sylfaen" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="558.0" layoutY="251.0" prefHeight="104.0" prefWidth="125.0" style="-fx-background-color: #82177e;">
+         <children>
+            <Button fx:id="singersImageButton" layoutX="4.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="117.0" style="-fx-background-color: #551975;" text="Other image" textAlignment="CENTER" textFill="#eee7e7" wrapText="true">
+               <font>
+                  <Font name="Sylfaen" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

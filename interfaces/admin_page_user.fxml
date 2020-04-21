@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #803ca3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListUsersController">
+    <children>
+        <Label layoutX="408.0" layoutY="85.0" text="Hello, Admin" textFill="#eee7e7f5">
+            <font>
+                <Font name="Georgia Italic" size="21.0" />
+            </font>
+        </Label>
+        <Pane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: #551975;">
+            <children>
+                <ImageView fitHeight="48.0" fitWidth="117.0" layoutX="292.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.jpg" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+        <Button fx:id="adminLogout" layoutX="560.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Logout" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+      <Button fx:id="backToAdminPage" layoutX="28.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="&lt;- Back" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="24.0" />
+         </font>
+      </Button>
+      <Pane layoutX="25.0" layoutY="132.0" prefHeight="115.0" prefWidth="658.0" style="-fx-background-color: #82177e;">
+         <children>
+              <Button fx:id="userDeleteButton" layoutX="518.0" layoutY="59.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Delete" textFill="#eee7e7">
+                  <font>
+                      <Font name="Georgia" size="24.0" />
+                  </font>
+              </Button>
+            <TextField fx:id="userDeleteTextField" layoutX="573.0" layoutY="11.0" prefHeight="39.0" prefWidth="71.0">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font></TextField>
+            <Label layoutX="518.0" layoutY="16.0" text="Id" textFill="#eee7e7">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="userSortName" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="203.0" style="-fx-background-color: #551975;" text="Sort by name" textFill="#eee7e7">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="userSortAge" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="203.0" style="-fx-background-color: #551975;" text="Sort by age" textFill="#eee7e7">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="userSortRegistered" layoutX="234.0" layoutY="6.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="203.0" style="-fx-background-color: #551975;" text="Sort by registered time" textAlignment="CENTER" textFill="#eee7e7" wrapText="true">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="tableOfUsers" layoutX="25.0" layoutY="262.0" prefHeight="333.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="25.0" text="id" />
+          <TableColumn fx:id="col_name" prefWidth="138.0" text="name" />
+            <TableColumn fx:id="col_phone" prefWidth="146.0" text="phone_number" />
+            <TableColumn fx:id="col_email" minWidth="0.0" prefWidth="135.0" text="email_address" />
+            <TableColumn fx:id="col_password" prefWidth="94.0" text="password" />
+            <TableColumn fx:id="col_gender" prefWidth="77.0" text="gender" />
+            <TableColumn fx:id="col_age" prefWidth="42.0" text="age" />
+            <TableColumn fx:id="col_country_id" prefWidth="67.0" text="country_id" />
+            <TableColumn fx:id="col_registered" prefWidth="70.0" text="registered_time" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

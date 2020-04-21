@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #803ca3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <Label layoutX="422.0" layoutY="73.0" text="Welcome" textFill="#eee7e7f5">
+         <font>
+            <Font name="Georgia Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="181.0" text="Email address" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="285.0" text="Password" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="132.0" text="Sign in to continue" textFill="#eee7e7f5">
+         <font>
+            <Font name="Georgia Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignInButton" layoutX="376.0" layoutY="407.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="277.0" style="-fx-background-color: #551975;" text="Login" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="376.0" layoutY="531.0" text="Add new user?" textFill="#eee7e7">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignUpButton" layoutX="501.0" layoutY="517.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="155.0" style="-fx-background-color: #551975;" text="Sign up" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="501.0" layoutY="478.0" text="OR" textFill="#eee7e7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login_email_field" layoutX="376.0" layoutY="230.0" prefHeight="39.0" prefWidth="277.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="659.0" fitWidth="338.0" layoutX="14.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: #551975;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="162.0" layoutX="287.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <PasswordField fx:id="login_password_field" layoutX="376.0" layoutY="325.0" prefHeight="39.0" prefWidth="277.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

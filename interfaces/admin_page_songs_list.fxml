@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #803ca3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminSongsListController">
+    <children>
+        <Label layoutX="408.0" layoutY="85.0" text="Hello, Admin" textFill="#eee7e7f5">
+            <font>
+                <Font name="Georgia Italic" size="21.0" />
+            </font>
+        </Label>
+        <Pane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: #551975;">
+            <children>
+                <ImageView fitHeight="48.0" fitWidth="117.0" layoutX="292.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.jpg" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+        <Button fx:id="logoutButton" layoutX="560.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="Logout" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="backButton" layoutX="28.0" layoutY="74.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #551975;" text="&lt;- Back" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+        <Pane layoutX="25.0" layoutY="126.0" prefHeight="76.0" prefWidth="658.0" style="-fx-background-color: #82177e;">
+            <children>
+                <Button fx:id="singerSortTitle" layoutX="73.0" layoutY="14.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="228.0" style="-fx-background-color: #551975;" text="Sort by title" textFill="#eee7e7">
+                    <font>
+                        <Font name="Georgia" size="24.0" />
+                    </font>
+                </Button>
+                <Button fx:id="singerSortPopular" layoutX="362.0" layoutY="15.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="228.0" style="-fx-background-color: #551975;" text="Sort by popularity" textFill="#eee7e7">
+                    <font>
+                        <Font name="Georgia" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <TableView fx:id="tableOfSongs" layoutX="25.0" layoutY="213.0" prefHeight="382.0" prefWidth="658.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="46.0" text="id" />
+                <TableColumn fx:id="col_title" prefWidth="159.0" text="title" />
+                <TableColumn fx:id="col_year" text="year" />
+                <TableColumn fx:id="col_popular" prefWidth="114.0" text="popular" />
+                <TableColumn fx:id="col_style" prefWidth="81.0" text="style_id" />
+                <TableColumn fx:id="col_singer" prefWidth="118.0" text="singer_d" />
+                <TableColumn fx:id="col_path" minWidth="0.0" prefWidth="59.0" text="file_path" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

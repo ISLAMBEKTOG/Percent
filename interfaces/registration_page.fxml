@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #803ca3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrationController">
+    <children>
+        <Label layoutX="260.0" layoutY="76.0" text="Registration" textFill="#eee7e7f5">
+            <font>
+                <Font name="Georgia Italic" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="73.0" layoutY="318.0" text="Email address" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="73.0" layoutY="403.0" text="Password" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="23.0" />
+            </font>
+        </Label>
+        <Button fx:id="registrationSubmitButton" layoutX="212.0" layoutY="543.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="277.0" style="-fx-background-color: #551975;" text="Submit" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="registrationBackButton" layoutX="18.0" layoutY="72.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="111.0" style="-fx-background-color: #551975;" text="&lt;- Back" textFill="#eee7e7">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Button>
+        <TextField fx:id="registration_email_field" layoutX="268.0" layoutY="329.0" prefHeight="39.0" prefWidth="328.0">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </TextField>
+        <Pane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: #551975;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="132.0" layoutX="284.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+        <PasswordField fx:id="registration_password_field" layoutX="268.0" layoutY="403.0" prefHeight="39.0" prefWidth="328.0">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </PasswordField>
+      <Label layoutX="76.0" layoutY="169.0" text="Name" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="249.0" text="Phone number" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="registration_name_field" layoutX="268.0" layoutY="164.0" prefHeight="39.0" prefWidth="328.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="registration_phone_field" layoutX="268.0" layoutY="249.0" prefHeight="39.0" prefWidth="205.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="ErrorForName" layoutX="268.0" layoutY="130.0" textFill="#f20707">
+         <font>
+            <Font name="Ebrima" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ErrorForPhone" layoutX="271.0" layoutY="219.0" textFill="#f20707">
+         <font>
+            <Font name="Ebrima" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ErrorForEmail" layoutX="268.0" layoutY="300.0" textFill="#f20707">
+         <font>
+            <Font name="Ebrima" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ErrorForPassword" layoutX="271.0" layoutY="373.0" textFill="#f20707">
+         <font>
+            <Font name="Ebrima" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="maleButton" layoutX="482.0" layoutY="457.0" mnemonicParsing="false" text="Male" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="femaleButton" layoutX="484.0" layoutY="496.0" mnemonicParsing="false" text="Female" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="489.0" layoutY="254.0" text="Age" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="registration_age_field" layoutX="539.0" layoutY="249.0" prefHeight="39.0" prefWidth="57.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="73.0" layoutY="481.0" text="Country" textFill="#eee7e7">
+         <font>
+            <Font name="Sylfaen" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="countryComboBox" layoutX="268.0" layoutY="477.0" prefHeight="39.0" prefWidth="191.0" />
+    </children>
+</AnchorPane>
